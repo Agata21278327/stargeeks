@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:  linear-gradient(90deg, #46106d 0%, rgba(107, 42, 152, 0.979) 23.1%, rgba(45, 12, 68, 0.619207) 64.85%, rgba(45, 12, 68, 0) 100%);
+    background-color: black;
+  
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "e f";
+}
+
+aside{
+    grid-area: e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50vh;
+}
+
+main {
+    grid-area: f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50vh;
+}
+
+footer {
+    padding: 50px;
+}
+
+form legend {
+    margin: 0 auto;
+    color: white;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    padding: 85px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 35px;
+}
+
+form > input {
+    border-radius: 20px;
+    min-width: 370px;
+    height: 71px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
+    color: #625656;
+}
+
+.btn-01 {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(165, 106, 206, 1);
+    color: rgb(0, 0, 0);
+    padding: 20px 0px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-01:hover {
+    background-color: rgba(250, 222, 222, 0.984);
+    transform: scale(0.9);
+    box-shadow: beige;
+    transition: 0.8s ease;
+}
+
+p {
+    color: white;
+    width: 514px;
+    height: 111px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    padding: 10px;
+}
+
+.esquisenha {
+    padding: 6px;
+    color: #5E7FF5;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+@media (max-width:800px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 50vh;
+        grid-template-areas: 
+        "e"
+        "f";
+    }
+
+}
