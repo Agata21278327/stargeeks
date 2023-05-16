@@ -7,7 +7,8 @@
 body{
     background:  linear-gradient(90deg, #46106d 0%, rgba(107, 42, 152, 0.979) 23.1%, rgba(45, 12, 68, 0.619207) 64.85%, rgba(45, 12, 68, 0) 100%);
     background-color: black;
-  
+    background-repeat: no-repeat;
+
 }
 
 .container {
@@ -24,6 +25,7 @@ aside{
     align-items: center;
     justify-content: center;
     min-width: 50vh;
+    row-gap: 20px;
 }
 
 main {
@@ -64,6 +66,8 @@ form > input {
     font-size: 20px;
     font-weight: 600;
     color: #625656;
+    padding: 20px;
+
 }
 
 .btn-01 {

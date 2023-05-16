@@ -7,12 +7,12 @@
 body {
     background: linear-gradient(180deg, #5E1392 2%, rgba(94, 19, 146, 0) 85.5%);
     background-color: black;
-    background-repeat: no-repeat;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    
 }
 
 form > legend {
@@ -37,8 +37,8 @@ form > label {
 form > input {
     margin: 0 auto;
     border-radius: 20px;
-    width: 785px;
-    height: 91px;
+    min-width: 370px;
+    height: 71px;
     font-style: italic;
     font-size: 20px;
     font-weight: 600;
