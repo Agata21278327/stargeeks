@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="cadastro.css">
 </head>
 <body>
-    <script src="login.js"></script>
+
 <div class="container">
     <aside>
         <p>
@@ -17,16 +17,19 @@
         </p>
     </aside>
     <main>
-        <form>
+        
+        <form id="formulario">
             <legend class="cadastro">Cadastro</legend>
+            <div class="mensagem"></div>
             <input type="text" id="inome" placeholder="Digite seu nome">
             <input type="email" id="imail" placeholder="Digite seu e-mail">
             <input type="password" id="isenha1" placeholder="Digite sua senha">
             <input type="password" id="iconfsen" placeholder="Confirme sua senha">
-            <a href="entrar.html" class="btn-01">Cadastre</a>
+            <button class="btn-01">Cadastre-se</button>
         </form>
         <footer> <a href="entrar.html" class="entrar">Já possui uma conta?</a></footer>
     </main>
 </div>
+<script src="cadastro.js"></script>
 </body>
 </html>

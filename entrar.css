@@ -28,6 +28,10 @@ aside{
     row-gap: 20px;
 }
 
+.mensagem{
+    color: white;
+}
+
 main {
     grid-area: f;
     display: flex;

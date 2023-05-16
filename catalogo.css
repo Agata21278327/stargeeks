@@ -88,6 +88,9 @@ header > nav > ul {
     color: rgb(255, 255, 255);
 }
 
+.mensagem {
+    color: white;
+}
 
 ul {
     display: flex;
