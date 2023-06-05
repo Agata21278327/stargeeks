@@ -12,7 +12,7 @@ formulario.onsubmit = evento => {
         return null;
     }
     if (email.value == ""){
-        mensagem.innerHTML = "Digite se e-mail";
+        mensagem.innerHTML = "Digite seu e-mail";
         evento.preventDefault();
         return null;
     }

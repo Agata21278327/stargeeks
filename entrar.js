@@ -1,5 +1,5 @@
 const fomulario = document.getElementById("formulario");
-const usuario = document.getElementById("iuser");
+const email = document.getElementById("iemail");
 const senha = document.getElementById("senhhaa");
 const mensagem = document.querySelector(".mensagem");
 
@@ -7,10 +7,17 @@ formulario.onsubmit = evento => {
     let dados = JSON.parse(localStorage.getItem("dados"));
 
     dados.forEach((elemento) => {
-        if (elemento.email == usuario.value && elemento.senha == senha.value) {
+        if (elemento.email == email.value && elemento.senha == senha.value) {
+            mensagem.innerHTML ="Logado";
         
             evento.preventDefault();
-            mensagem.innerHTML ="Logado";
+            let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
+            dados.push(
+                {
+                    email : email.value
+                }
+            )
+            sessionStorage.setItem("logado", JSON.stringify(dados));
             setTimeout(()=>{
                  window.location.assign("catalogo.html");
                 }, 1000);
